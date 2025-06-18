@@ -342,5 +342,13 @@
       align-content: center;
       flex-direction: column;
     }
+
+
+    header .logo img{
+      display: flex;
+      height: fit-content;
+      width: 200px;
+      align-items: center;
+    }
   }
   
