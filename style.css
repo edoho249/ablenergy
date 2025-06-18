@@ -1,0 +1,331 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    color: #1a1a1a;
+  }
+  header {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    border-bottom: 1px solid #eee;
+  }
+  header .logo img{
+    font-weight: bold;
+    display: flex;
+    height: fit-content;
+    width: 200px;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+ 
+  header nav a {
+    margin-left: 20px;
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  header nav  input {
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    padding: 0.5rem 1rem;
+  }
+  .hero {
+    background-image: url('img/solar-panels-meadow-min.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 2rem;
+    color: white;
+    text-align: center;
+  }
+  .hero h1 {
+    font-size: 2.5em;
+      font-weight: bold;
+      padding: 20px 40px;
+      border-radius: 16px;
+      background: rgba(255, 255, 255, 0.685); /* semi-transparent box */
+      backdrop-filter: blur(2px);          /* blur the background */
+      -webkit-backdrop-filter: blur(10px);  /* Safari support */
+      
+      background-image: linear-gradient(to right, #00aaff, #000000);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+  }
+  .hero-buttons button {
+    margin: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .shop-btn {
+    background: #ff7a00;
+    color: white;
+  }
+  .vendor-btn {
+    background: white;
+    color: #004080;
+    border: 1px solid #004080;
+  }
+  .section {
+    padding: 3rem 2rem;
+  }
+  .section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #002244;
+  }
+  .products, .features, .partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  .product-card, .feature, .partner-logo {
+    background: #f8f8f8;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 180px;
+    text-align: center;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  }
+  .product-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+  }
+  .product-card button {
+    background: #003366;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .feature i {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  .partner-logo {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #666;
+  }
+  .register-section {
+    background: #e0f7e9;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 40px;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+  .register-section button {
+    background: #4CAF50;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  footer {
+    background: #002244;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  footer div a {
+    color: white;
+    margin-right: 1rem;
+   
+    text-decoration: none;
+  }
+
+  .footer-1 { display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-2 img {
+    width: 30px;
+}
+
+.footer-2{
+    gap: 10px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-2 .img{
+    display: flex;
+    flex-direction: row;
+}
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, white, skyblue, navy);
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    position: relative;
+    z-index: 10;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .shop-btn {
+    background: #ff7a00;
+    color: white !important;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+  }
+
+  .search-btn {
+    background: transparent;
+    border: 1px solid #000;
+    padding: 0.4rem 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+  }
+
+  .search-btn  {
+    display: none;
+    /* background-color: green; */
+    height: 30px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+  }
+
+  .mail{
+    text-align: center;
+  }
+
+  @media (max-width: 768px) {
+    nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem 2rem;
+      display: none;
+    }
+
+    nav.show {
+      display: flex;
+    }
+
+    .hamburger {
+      display: flex;
+    }
+ header nav input {
+    display: none;
+ }
+  }
+/* Mobile view */
+@media (max-width: 768px) {
+    .mobile-actions {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-left: auto;
+    }
+  
+    .search-btn {
+      display: flex;
+      align-items: center;
+      height: 40px;
+      border: none;
+    }
+  
+    .search-btn img {
+      height: 24px;
+      width: 24px;
+    }
+  
+    .hamburger {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      cursor: pointer;
+    }
+  
+    .hamburger div {
+      width: 25px;
+      height: 3px;
+      background-color: #333;
+    }
+    footer{
+        flex-direction: row;
+      gap: 35px;
+        text-align: center;
+        justify-content: center;
+    }
+    .mail{
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+    }
+  }
