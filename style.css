@@ -257,8 +257,7 @@
   .mail{
     text-align: center;
   }
-
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     nav {
       position: absolute;
       top: 100%;
@@ -270,20 +269,22 @@
       padding: 1rem 2rem;
       display: none;
     }
-
+  
     nav.show {
       display: flex;
     }
-
+  
     .hamburger {
       display: flex;
     }
- header nav input {
-    display: none;
- }
+  
+    header nav input {
+      display: none;
+    }
   }
-/* Mobile view */
-@media (max-width: 768px) {
+  
+  /* Mobile view */
+  @media (max-width: 1000px) {
     .mobile-actions {
       display: flex;
       align-items: center;
@@ -316,16 +317,30 @@
       height: 3px;
       background-color: #333;
     }
-    footer{
-        flex-direction: row;
-      gap: 35px;
-        text-align: center;
-        justify-content: center;
+  
+    .products,
+    .features {
+      justify-content: center;
+      gap: 1rem;
     }
-    .mail{
-        display: flex;
-        align-items: center;
-        align-content: center;
-        flex-direction: column;
+  
+    .product-card,
+    .feature {
+      width: calc(50% - 1rem); /* Two-column layout */
+    }
+  
+    footer {
+      flex-direction: row;
+      gap: 35px;
+      text-align: center;
+      justify-content: center;
+    }
+  
+    .mail {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
     }
   }
+  
