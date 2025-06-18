@@ -16,14 +16,12 @@
     padding: 1rem 2rem;
     border-bottom: 1px solid #eee;
   }
-  header .logo img{
-    font-weight: bold;
-    display: flex;
-    height: fit-content;
-    width: 200px;
-    align-items: center;
-    font-size: 1.2rem;
+  header .logo img {
+    height: auto;
+    max-height: 60px;
+    width: auto;
   }
+  
 
  
   header nav a {
@@ -342,13 +340,9 @@
       align-content: center;
       flex-direction: column;
     }
-
-
-    header .logo img{
-      display: flex;
-      height: 80px;
-      width: 200px;
-      align-items: center;
-    }
+      header .logo img {
+        max-height: 50px; /* adjust this to fit nicely on iPhones */
+      }
+    
   }
   
