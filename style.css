@@ -346,7 +346,7 @@
 
     header .logo img{
       display: flex;
-      height: fit-content;
+      height: 80px;
       width: 200px;
       align-items: center;
     }
